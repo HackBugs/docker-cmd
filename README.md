@@ -7,11 +7,11 @@
 - `sudo systemctl start docker`
 ------------------------------------------------------------------
 ### Dockerfile
- --docker image
-     ---docker containers
-     ---docker containers
-     ---docker containers
-     ---docker containers
+ - docker image
+     - docker containers
+     - docker containers
+     - docker containers
+     - docker containers
 ------------------------------------------------------------------
   - docker version
   - docker --version
