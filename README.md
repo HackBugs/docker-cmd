@@ -1,5 +1,5 @@
-# docker-cmd
-Author: HackBugs
+# Docker-cmd
+``Author: HackBugs``
 
 ### Docker
 - `sudo systemctl status docker`
