@@ -5,49 +5,49 @@
 - `sudo systemctl status docker`
 - `sudo systemctl restart docker`
 - `sudo systemctl start docker`
-
+------------------------------------------------------------------
 ### Dockerfile
  --docker image
      ---docker containers
      ---docker containers
      ---docker containers
      ---docker containers
-
+------------------------------------------------------------------
   - docker version
   - docker --version
   - docker compose version
-
+------------------------------------------------------------------
   - docker run -p 80:80 nginx  --map prot container machine to primary machine
-
+------------------------------------------------------------------
   - docker system prune --
   - docker system prune --
-
+------------------------------------------------------------------
   - docker pull nginx -- this cmd like "git clone" show only image section not in container section
   - dcoekr run nginx -- this cmd use to meke image to build container and show container section
-
+------------------------------------------------------------------
   - docker search mysql --know information about particular package
   - docker history nginx --know history of particular package
   - docker logs nginx --can check logs of particular container
   - docker ps -a | grep nginx
-
+------------------------------------------------------------------
   - dcoker images
   - dcoker ps -a
-
+------------------------------------------------------------------
   - docker pull "image-name" --downlaod the container from docker hub
   - docker run "image-name" --This cmd will install and run the image togethr the
   - docker run -it "image-name" -- with this cmd we can install image and run and also will enter inside/into container
-
+------------------------------------------------------------------
   - docker run --name "image-name" --can duplicate the image
   - Ex- docker run --name nginx-2nd  nginx
-
+------------------------------------------------------------------
   - docker run --name nginx-2nd -it -d nginx
-
+------------------------------------------------------------------
   - docker run -it alpine
   - docker exec alpine -d -it alpine /bin/sh
   - --if i want to run in background, of any container than i use -d
-
+------------------------------------------------------------------
   - docker inspect "container_id" --to this cmd you can inspect of any container and can know all the information of container.
-
+------------------------------------------------------------------
   - docker push nginx  --thix cmd like use "git push origin main"
 
   - ------------------------------------------------------------------
