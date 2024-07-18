@@ -2,9 +2,9 @@
 Author: HackBugs
 
 ### Docker
-- sudo systemctl status docker
-- sudo systemctl restart docker
-- sudo systemctl start docker
+- `sudo systemctl status docker`
+- `sudo systemctl restart docker`
+- `sudo systemctl start docker`
 
 ### Dockerfile
  --docker image
