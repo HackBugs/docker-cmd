@@ -168,5 +168,147 @@ In steps ko follow karke aap identify kar sakte hain ki Jenkins kaha se run ho r
 
 ### mount into container of volume
 - docker run --name "container-name" -idt -v "volume-name":/"maapp" "image-name"
+--------------------------------------------------------------------------------------
+
+### Yahaan Docker ke kuch mukhya commands aur flags ke saath unke short explanations aur examples diye gaye hain:
+
+### Docker Commands:
+
+1. **docker ps**
+   - Lists running containers.
+   ```sh
+   docker ps
+   ```
+
+2. **docker ps -a**
+   - Lists all containers (running and stopped).
+   ```sh
+   docker ps -a
+   ```
+
+3. **docker images**
+   - Lists all downloaded images.
+   ```sh
+   docker images
+   ```
+
+4. **docker run**
+   - Runs a command in a new container.
+   ```sh
+   docker run <image_name>
+   ```
+
+5. **docker exec**
+   - Runs a command in a running container.
+   ```sh
+   docker exec <container_id_or_name> <command>
+   ```
+
+6. **docker stop**
+   - Stops one or more running containers.
+   ```sh
+   docker stop <container_id_or_name>
+   ```
+
+7. **docker rm**
+   - Removes one or more containers.
+   ```sh
+   docker rm <container_id_or_name>
+   ```
+
+8. **docker rmi**
+   - Removes one or more images.
+   ```sh
+   docker rmi <image_id_or_name>
+   ```
+
+### Docker Flags:
+
+1. **-it**
+   - Attaches an interactive terminal to the container.
+   ```sh
+   docker run -it <image_name> bash
+   ```
+
+2. **-v**
+   - Mounts a volume from the host system to the container.
+   ```sh
+   docker run -v /host/path:/container/path <image_name>
+   ```
+
+3. **-p**
+   - Maps a host port to a container port.
+   ```sh
+   docker run -p 8080:80 <image_name>
+   ```
+
+4. **-d**
+   - Runs the container in detached mode (background).
+   ```sh
+   docker run -d <image_name>
+   ```
+
+5. **--name**
+   - Assigns a name to the container.
+   ```sh
+   docker run --name my-container <image_name>
+   ```
+
+6. **--rm**
+   - Automatically removes the container when it exits.
+   ```sh
+   docker run --rm <image_name>
+   ```
+
+7. **--network**
+   - Specifies the network to which the container should connect.
+   ```sh
+   docker run --network my-network <image_name>
+   ```
+
+8. **--link**
+   - Links another container to the running container.
+   ```sh
+   docker run --link db-container:mysql <image_name>
+   ```
+
+### Examples:
+
+1. **Run a MySQL container:**
+   ```sh
+   docker run -d --name mysql-db -e MYSQL_ROOT_PASSWORD=password mysql:latest
+   ```
+
+2. **Attach to an interactive terminal:**
+   ```sh
+   docker exec -it mysql-db bash
+   ```
+
+3. **Mount a volume:**
+   ```sh
+   docker run -v /host/data:/container/data myapp
+   ```
+
+4. **Map ports:**
+   ```sh
+   docker run -p 8080:80 myapp
+   ```
+
+5. **Remove a container automatically when it exits:**
+   ```sh
+   docker run --rm myapp
+   ```
+
+6. **Assign a name to a container:**
+   ```sh
+   docker run --name my-container myapp
+   ```
+
+7. **Link containers:**
+   ```sh
+   docker run --link mysql-db:mysql myapp
+   ```
+
+Yeh commands aur flags Docker ke basic operations ko cover karte hain. Inka use Docker containers ko manage aur interact karne mein kiya ja sakta hai.
 
 
