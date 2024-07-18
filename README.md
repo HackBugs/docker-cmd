@@ -156,8 +156,17 @@
 In steps ko follow karke aap identify kar sakte hain ki Jenkins kaha se run ho raha hai aur accordingly action le sakte hain.
 
 ### Push docker container to local machine 
-
 - docker tag "image-id" "username"/"image-name"
 - login "username"
 - password "password"
 - docker push "username"/"imagename"
+
+### Create docker volume
+- docker volume create "volume-name"
+- docker volume ls --show "volume" detaila
+- docker volume inspect "volume-name"
+
+### mount into container of volume
+- docker run --name "container-name" -idt -v "volume-name":/"maapp" "image-name"
+
+
