@@ -154,3 +154,10 @@
 - **Local Machine:** Check running processes aur installed services.
 
 In steps ko follow karke aap identify kar sakte hain ki Jenkins kaha se run ho raha hai aur accordingly action le sakte hain.
+
+### Push docker container to local machine 
+
+- docker tag "image-id" "username"/"image-name"
+- login "username"
+- password "password"
+- docker push "username"/"imagename"
