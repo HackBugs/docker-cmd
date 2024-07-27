@@ -5,7 +5,7 @@
 
 cmd - docker run -td --name port-sharing -p 80:80 ubuntu
 cmd - docker port port-sharing
-cmd - docker exe -it port-sharing /bin/bash
+cmd - docker exec -it port-sharing /bin/bash
 cmd - apt-get update
 cmd - apt-get install apache2 -y
 cmd - cd /var/www/html
