@@ -6,7 +6,11 @@ Docker File
 Docker Image - We can download as per aur requerement images from DockerHub
 Docker Container - After downloading image form DockerHub we can run
 If image is in running state we called container
-We made with mutiple file docker image and image share and transfer we other people 
+We made with mutiple file docker image and image share and transfer we other people
+
+Create container and share volume to each other
+docker run -it --name container3  -v /volume2 ubuntu /bin/bash
+docker run -it --name container4 --privileged=true --volumes-from container3 ubuntu /bin/bash
 ```
 
 ### Docker
