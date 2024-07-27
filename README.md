@@ -1,6 +1,13 @@
 # Docker-cmd
 ``Author: HackBugs``
 
+```sh
+Docker File
+Docker Image - We can download as per aur requerement images from DockerHub
+Docker Container - After downloading image form DockerHub we can run
+If image is in running state we called container
+```
+
 ### Docker
 - `sudo systemctl status docker`
 - `sudo systemctl restart docker`
