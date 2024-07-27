@@ -13,7 +13,7 @@ cmd - echo "Hello i installed apache2 on my dcoker" >index.html
 cmd - service apache2 restart
 Paste this URL on your browser - http://127.0.0.1 - http://localhost
 
-cmd - docker run -td --name myjenkins -p 8080:8080 jenkins
+cmd - docker run -td --name myjenkins -p 8080:8080 jenkins/jenkins:lts
 
 Docker File
 Docker Image - We can download as per aur requerement images from DockerHub
