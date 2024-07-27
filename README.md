@@ -11,6 +11,10 @@ We made with mutiple file docker image and image share and transfer we other peo
 Create container and volume and share volume to each other
 docker run -it --name container3  -v /volume2 ubuntu /bin/bash
 docker run -it --name container4 --privileged=true --volumes-from container3 ubuntu /bin/bash
+
+Start container
+docker start container3
+docker attach container3
 ```
 
 ### Docker
