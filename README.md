@@ -2,6 +2,15 @@
 ``Author: HackBugs``
 
 ```sh
+
+cmd - docker run -td --name port-sharing -p 80:80 ubuntu
+cmd - docker port port-sharing
+cmd - docker exe -it port-sharing /bin/bash
+cmd - apt-get update
+cmd - apt-get install apache2 -y
+cmd - cd /var/www/html
+cmd - echo "Hello i installed apache2 on my dcoker" >index.html
+
 Docker File
 Docker Image - We can download as per aur requerement images from DockerHub
 Docker Container - After downloading image form DockerHub we can run
