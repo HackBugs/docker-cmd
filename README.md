@@ -2,6 +2,8 @@
 ``Author: HackBugs``
 
 ```sh
+docker logout
+docker login
 
 cmd - docker run -td --name port-sharing -p 80:80 ubuntu
 cmd - docker port port-sharing
