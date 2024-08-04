@@ -75,7 +75,7 @@ docker attach container3
   - docker run --name nginx-2nd -it -d nginx
 ------------------------------------------------------------------
   - docker run -it alpine
-  - docker exec alpine -d -it alpine /bin/sh
+  - docker exec alpine -d -it alpine /bin/bash
   - --if i want to run in background, of any container than i use -d
 ------------------------------------------------------------------
   - docker inspect "container_id" --to this cmd you can inspect of any container and can know all the information of container.
