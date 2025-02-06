@@ -1,4 +1,4 @@
-# Docker-cmd
+# Docker-cmd ✅
 ``Author: HackBugs``
 
 ```sh
@@ -93,7 +93,68 @@ docker attach container3
 
   - docker run -d -p 8001:80 --name phpmyadmin-c3 phpmyadmin
 
-  - ----------------------------------------------------------------
+<hr>
+
+> # Docker mein ek hi command se band (stopped) container ko stop aur remove karna, aur image ko delete karne ke liye aap yeh commands use kar sakte hain: ✅
+
+### 1. **Stopped Containers Ko Stop Aur Remove Karna**:
+Agar aapko **sabhi stopped containers** ko stop aur remove karna hai, toh aap yeh command use kar sakte hain:
+```bash
+docker container prune -f
+```
+Is command se sabhi stopped containers ko **forcefully** remove kar diya jayega.
+
+### 2. **Ek Specific Stopped Container Ko Stop Aur Remove Karna**:
+Agar aapko ek specific container ko stop aur remove karna hai, toh yeh commands use kar sakte hain:
+- **Stop the container**:
+  ```bash
+  docker stop <container_id_or_name>
+  ```
+- **Remove the container**:
+  ```bash
+  docker rm <container_id_or_name>
+  ```
+
+### 3. **Docker Images Ko Delete Karna**:
+#### **Ek Specific Image Ko Delete Karna**:
+Agar aapko ek specific image ko delete karna hai, toh yeh command use karein:
+```bash
+docker rmi <image_id_or_name>
+```
+
+#### **Multiple Images Ko Ek Saath Delete Karna**:
+Agar aapko multiple images ko ek saath delete karna hai, toh aap in images ke IDs ko comma-separated list mein de sakte hain:
+```bash
+docker rmi <image_id1> <image_id2> <image_id3>
+```
+
+#### **Sabhi Unused Images Ko Clean Karna**:
+Agar aapko sabhi **unused** images ko remove karna hai, toh yeh command use karein:
+```bash
+docker image prune -a -f
+```
+
+Yeh command **all unused images** ko delete kar degi jo kisi running container se connected nahi hain.
+
+### Example:
+1. **Stop and remove all stopped containers**:
+   ```bash
+   docker container prune -f
+   ```
+
+2. **Remove a specific image**:
+   ```bash
+   docker rmi zabbix/zabbix-web-nginx-pgsql:latest
+   ```
+
+3. **Remove multiple images at once**:
+   ```bash
+   docker rmi image_id1 image_id2 image_id3
+   ```
+
+Is tarah se aap Docker mein containers aur images ko efficiently manage kar sakte hain.
+
+<hr>
 
 # **Check process Running on docker and laptop or linux**
 
